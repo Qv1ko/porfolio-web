@@ -1,1 +1,17 @@
 @import "tailwindcss";
+@import '@fontsource-variable/onest';
+
+:root {
+    color-scheme: light dark;
+}
+
+html {
+    font-family: 'Onest Variable', system-ui, sans-serif
+}
+
+body {
+    background-color: #050505;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
