@@ -1,8 +1,26 @@
 ---
+import Badge from "../components/Badge.astro";
 import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout />
+<Layout>
+  <section class="w-[740px] mx-auto py-44">
+    <h1 class="text-5xl font-bold flex flex-row gap-x-4 pb-2">
+      Hey, soy Víctor <a
+        href="https://www.linkedin.com/in/qv1ko/"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center"
+      >
+        <Badge>Trabajando</Badge>
+      </a>
+    </h1>
+    <h2 class="text-xl opacity-80">
+      5 años en el sector informatico. Desarrollador web. Desde Burgos, España.
+      Siempre con ganas de aprender cosas nuevas.
+    </h2>
+  </section>
+</Layout>
