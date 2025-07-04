@@ -1,6 +1,9 @@
 ---
 import Badge from "../components/Badge.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 import SocialPill from "../components/SocialPill.astro";
+import BriefcaseIcon from "../icons/BriefcaseIcon.astro";
 import GitHubIcon from "../icons/GitHubIcon.astro";
 import LinkedInIcon from "../icons/LinkedInIcon.astro";
 import MailIcon from "../icons/MailIcon.astro";
@@ -11,7 +14,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <section class="w-[740px] mx-auto py-44">
+  <SectionContainer class="pt-44 pb-24">
     <h1 class="text-5xl font-bold flex flex-row gap-x-4 pb-2">
       Hey, soy Víctor <a
         href="https://www.linkedin.com/in/qv1ko/"
@@ -43,5 +46,12 @@ import Layout from "../layouts/Layout.astro";
         vicgarmur947@gmail.com
       </SocialPill>
     </nav>
-  </section>
+  </SectionContainer>
+  <SectionContainer>
+    <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+      <BriefcaseIcon class="size-7" />
+      Experiencia laboral
+    </h2>
+    <Experience />
+  </SectionContainer>
 </Layout>

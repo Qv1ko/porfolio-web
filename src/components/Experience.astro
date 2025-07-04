@@ -1,0 +1,39 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCES = [
+  {
+    date: "Junio 2025",
+    title: "Desarrollador web",
+    description: "Contrato de prácticas en Softeca",
+    link: "https://www.softeca.es/",
+  },
+  {
+    date: "Marzo 2025 - Mayo 2025",
+    title: "Desarrollador web",
+    description: "Prácticas en Softeca",
+    link: "https://www.softeca.es/",
+  },
+  {
+    date: "Marzo 2024 - Junio 2024",
+    title: "Desarrollador de software y ayudante",
+    description: "Prácticas en 365ITHub",
+  },
+  {
+    date: "Marzo 2022 - Junio 2022",
+    title: "Desarrollador web con WordPress",
+    description: "Prácticas en Valsoft Informática",
+    link: "https://valsoft.es/",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    EXPERIENCES.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
