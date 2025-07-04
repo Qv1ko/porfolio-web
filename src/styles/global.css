@@ -6,7 +6,8 @@
 }
 
 html {
-    font-family: 'Onest Variable', system-ui, sans-serif
+    font-family: 'Onest Variable', system-ui, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,4 +20,10 @@ body {
 
 p {
     max-width: 70ch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }
