@@ -13,9 +13,11 @@ import Layout from "../layouts/Layout.astro";
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
+<Layout class="px-4">
   <SectionContainer id="top" class="pt-44 pb-24">
-    <h1 class="text-5xl font-bold flex flex-row gap-x-4 pb-2">
+    <h1
+      class="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+    >
       Hey, soy Víctor <a
         href="https://www.linkedin.com/in/qv1ko/"
         target="_blank"
@@ -25,24 +27,24 @@ import Layout from "../layouts/Layout.astro";
         <Badge>Trabajando</Badge>
       </a>
     </h1>
-    <h2 class="text-2xl opacity-90 text-wrap">
+    <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
       <span>5 años en el sector informatico</span>. <span
         class="text-yellow-200/90">Desarrollador web</span
       >. <span class="text-red-200/90">Desde Burgos, España</span>.
       <span class="opacity-75">Siempre con ganas de aprender cosas nuevas</span
       >.
     </h2>
-    <nav class="flex gap-x-4 mt-8">
+    <nav class="flex gap-4 mt-8 flex-wrap">
       <SocialPill href="https://www.linkedin.com/in/qv1ko/">
-        <LinkedInIcon class="size-6" />
+        <LinkedInIcon class="size-4 md:size-6" />
         LinkedIn
       </SocialPill>
       <SocialPill href="https://github.com/Qv1ko">
-        <GitHubIcon class="size-6" />
+        <GitHubIcon class="size-4 md:size-6" />
         GitHub
       </SocialPill>
       <SocialPill href="mailto:vicgarmur947@gmail.com">
-        <MailIcon class="size-6" />
+        <MailIcon class="size-4 md:size-6" />
         vicgarmur947@gmail.com
       </SocialPill>
     </nav>
